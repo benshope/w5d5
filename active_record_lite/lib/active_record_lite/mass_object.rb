@@ -1,13 +1,12 @@
 
-# Mass Object is a blank object that will be the base class for our Model class
-# MassObject initialized by placing key/values into available variables/values
+# Mass Object is a blank object, the base for the Model class
+# MassObject places key/values into variables/values
 
 class MassObject
 	@attributes = []
 
 	def self.set_attrs(*attributes)
 		@attributes = attributes
-
 		attributes.each do |attribute|
 			attr_accessor attribute
 		end

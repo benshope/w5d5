@@ -1,9 +1,8 @@
 
-
-# I have no idea why this is in it's own module.
-# Shouldn't every SQL object be searchable?
-# Is searchable useful somewhere else?
-# If it is needed in associable, wouldn't it already be available?
+# Why this is in a separate module?
+# Shouldn't every SQLObject be searchable?
+# Is the searchable module useful somewhere else?
+# If it was needed in associable, wouldn't it already be available?
 
 require_relative './db_connection'
 
