@@ -2,7 +2,7 @@
 # Why this is in a separate module?
 # Shouldn't every SQLObject be searchable?
 # Is the searchable module useful somewhere else?
-# If it was needed in associable, wouldn't it already be available?
+# If it was needed in associatable, wouldn't it already be available?
 
 require_relative './db_connection'
 
