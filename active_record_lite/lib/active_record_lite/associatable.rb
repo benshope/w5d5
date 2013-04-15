@@ -41,8 +41,8 @@ module Associatable
 	      joinobj = self.class.assoc_params[join] ||= params[join]
 	      destinationobj = joinobj.other_class.assoc_params[destination]
   	  	  # Build a join query from both sets of parameters
-          other_key = self.send(destinationobj.foreign_key)
-          rows = DBConnection.execute(<<-SQL, pk1)
+          final_key = self.send(destinationobj.foreign_key)
+          rows = DBConnection.execute(<<-SQL, final_key)
           SELECT #{destinationobj.other_table}.*
             FROM #{destinationobj.other_table}
             JOIN #{joinobj.other_table}
